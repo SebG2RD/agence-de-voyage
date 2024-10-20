@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --color-first:#4087f5;
+    --color-white:#ffffff;
+    --color-black:#000000;
+    --box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+*,::after,::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1 {
+    color: var(--color-white);
+    font-size: 3rem;
+}
+::placeholder, h2, h3, h4, .fa-solid {
+    font-family: Assistant, sans-serif;
+    color: var(--color-first);
+}
+p {
+    font-family: Oswald, sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: var(--color-first);
+    font-weight: 400;
+}
+a:hover {
+    color: var(--color-black);
+}
+.button {
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+}
+.button-primary {
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    background-color: var(--color-first);
+    transition-duration: 0.5s;
+}
+.button-primary:hover {
+    border: 2px solid var(--color-first);
+    color: var(--color-first);
+    background-color: var(--color-white);
+}
+.button-secondary {
+    border: 2px solid var(--color-first);
+    color: var(--color-first);
+    background-color: var(--color-white);
+    transition-duration: 0.5s;
+}
+.button-secondary:hover {
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    background-color: var(--color-first);
+}
+@keyframes fadeIn {
+    0% { 
+        opacity: 0; 
+    }
+    100% { 
+        opacity: 1; 
+    }
+  }
+.fade-in { 
+    animation: fadeIn 2s; 
+}
+.fade-in-2 { 
+    animation: fadeIn 8s; 
+}
+
+.navbar {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #00000080;
+}
+.navbar a {
+    color: var(--color-white);
+}
+.navbar img {
+    width: 3rem;
+}
+.logo img {
+    width: 5rem;
+}
+
+.navbar .nav-link ul {
+    display: flex;
+}
+.navbar .nav-link li {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+.navbar .nav-link li .active, .navbar .nav-link a:hover {
+    color: var(--color-first);
+    font-weight: 600;
+}
+
+.menu-hamburger {
+    
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+.nav-link {
+    top: 0;
+    left: 0;
+    position: absolute;
+    backdrop-filter: blur(7px);
+    background-color:#00000090;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s;
+}
+.mobile-menu {
+    margin-left: 0;
+}
+.nav-link ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.banniere {
+    background: url("../assets/img/banniere%20montagne.jpg") bottom / cover no-repeat;
+    width: 100%;
+    min-height: 45rem;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banniere .white {
+    color: var(--color-white);
+}
+.banniere-button {
+    display: block;
+    padding: 2rem;
+}
+.banniere-button li {
+    margin: 3rem 1rem;
+}
+.banniere-button li a {
+    margin-bottom: 3rem;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+input, select, textarea {
+    border: 2px solid var(--color-first);
+    padding: 0.8rem;
+    border-radius: 2rem;
+    color: var(--color-first);
+    margin: 0.5rem 0;
+    width: 100%;
+}
+article{
+    padding: 2rem 2rem;
+    text-align: center;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    border-radius: 3rem;
+}
+.form-contact {
+    padding: 0 1rem;
+}
+.listCard {
+    border: 2px solid var(--color-first);
+    border-radius: 2rem 2rem 0 0;
+    margin-bottom: 2rem;
+    transition: 0.5s;
+}
+
+.listCard:hover {
+    box-shadow: var(--box-shadow);
+}
+.card__media {
+    border-radius: 2rem 2rem 0 0;
+    max-width: 20rem;
+}
+.card__content, h2, .contact-right P {
+    margin: 1rem 0;
+}
+.contact {
+    width: 100%;
+    min-height: 25rem;
+    background-color: var(--color-first);
+    display: flex;
+    flex-direction: column;
+}
+.contact h2, .contact p {
+    color: var(--color-white);
+}
+.contact-left {
+    background: url(../assets/img/vignette-contact.jpg);
+    background-position: center;
+    width: 100%;
+    height: 25rem;
+}
+.contact-right {
+    padding: 5rem;
+}
+
+footer {
+    width: 100%;
+    min-height: 10rem;
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer li {
+    list-style: none;
+}
+footer p, footer a {
+    color: var(--color-white);
+    text-align: center;
+}
+footer a:hover {
+    color: var(--color-first);
+}
+.footer-menu {
+    text-align: center;
+}
+.footer-col{
+    padding: 1rem 0;
+}
+.footer-col i {
+    padding: 0 1rem;
+}
+
+/* Formulaire de contact */
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.banniere-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.banniere .list {
+    background-color: var(--color-white);
+    width: 50%;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 2rem 2rem;
+}
+
+
+@media (min-width: 1024px) {
+    .button {
+        padding: 0.5rem 5rem;
+        border-radius: 2rem;
+    }
+    .navbar {
+        padding: 1.5rem;
+        position: fixed;
+        z-index: 999;
+    }
+    .nav-link {
+        top: 2.5rem;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 2rem;
+        margin-left: 0;
+        background-color: transparent;
+        backdrop-filter: none;
+        padding: 1rem 0;
+    }
+    .nav-link ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .navbar .nav-link li {
+        margin: 0 2rem;
+        font-size: 1rem;
+    }
+    .menu-hamburger {
+        display: none;
+    }
+    .nav-link {
+        display: block;
+    }
+    .banniere input:first-child {
+        width: 40%;
+        margin: 0px 1rem;
+    }
+    .banniere input:nth-child(2), select {
+        margin: 0 1rem;
+        width: 15%;
+    }
+    .banniere-button {
+        display: flex;
+        padding: 2rem;
+    }
+    .banniere-button li {
+        margin-bottom: 0;
+    }
+    article{
+        padding: 5rem 15rem;
+        text-align: center;
+    }
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5rem;
+    }
+    .listCard {
+        flex: 0 0 50
+    }
+    .contact {
+        flex-direction: row;
+     }
+    .contact-left {
+        background-position: right;
+    }
+    footer {
+        display: block;
+    }
+    .footer-menu {
+        display: flex;
+        justify-content: space-around;
+    }
+    /* Page contact  */
+    .banniere-contact{
+        flex-direction: row;
+    }
+    .banniere .list {
+        width: 33%;
+        flex-direction: column;
+        margin: 0 2rem -30rem 2rem;
+    }
+    .form-name {
+        display: flex;
+        gap: 2rem;
+    }
+    
+}

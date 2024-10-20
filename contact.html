@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="assets/img/Logo Seb voyage JPG.jpg" type="image/x-icon">
+    <title>Seb voyage</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><img src="assets/img/Logo Seb voyage PNG.png" alt="Logo Seb voyage"></a>
+            <div class="nav-link">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#">Votre voyage</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="/contact.html" class="active">Contact</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+            <img src="assets/img/menu-btn.png" alt="" class="menu-hamburger">
+            <script>const menuHamburger = document.querySelector(".menu-hamburger")
+                const navLinks = document.querySelector(".nav-link")
+                
+                menuHamburger.addEventListener('click',()=>{
+                    navLinks.classList.toggle('mobile-menu')
+                })</script>
+        </nav>
+    </header>
+    <main>
+        <section class="banniere fade-in">
+            <h1>Contactez nous</h1>
+            <div class="banniere-contact">
+                <a href="tel:+33600000000" class="list contact-right">
+                    <i class="fa-solid fa-phone"></i>
+                    <h2>Téléphone</h2>
+                    <p>+336 00 00 00 00</p>
+                </a>
+                <a href="mailto:contact@mail.com" class="list contact-right">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h2>Mail</h2>
+                    <p>contact@mail.com</p>
+                </a>
+            </div>
+        </section>
+        <article class="formulaire fade-in-2">
+            <h2>Une question ? Un projet ? Contactez nous</h2>
+            <div class="list">
+                <form action="" class="form-contact">
+                    <div class="form-genre">
+                        <label for="">Monsieur<input type="radio" name="" id=""></label>
+                        <label for="">Madame<input type="radio" name="" id=""></label>
+                    </div>
+                    <div class="form-name">
+                        <input type="text" placeholder="Prénom">
+                        <input type="text" placeholder="Nom de famille">
+                    </div>    
+                    <input type="email" name="" id="" placeholder="email@mail.com">
+                    <input type="number" name="" id="" placeholder="+330 00 00 00">
+                    <textarea name="" id="" rows="15" cols="50" placeholder="Votre message..."></textarea>
+                    <input type="submit" value="Envoyer" class="button button-primary">
+                </form>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="footer-menu">
+            <div class="footer-col">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-tiktok"></i>Tiktok</a></li>
+                </ul>
+                
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Conditions Générales de Vente</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2612.056506423279!2d1.4479680773427779!3d49.104566971366616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b1b1ed8da83c4f%3A0xfd1433c91f7451f0!2sKyriad!5e0!3m2!1sfr!2sfr!4v1728843990721!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="footer-copyrith">
+            <p>Copyright 2024 © - Tous les droits sont réservés</p>
+        </div>
+    </footer>
+</body>
+</html>
